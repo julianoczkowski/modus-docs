@@ -13,6 +13,9 @@ A minimal one-time boiler-plate that every HTML page using Modus Web Components 
   href="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents/modus-wc-styles.css"
 />
 
+<!-- Tailwind CSS for utility classes -->
+<script src="https://cdn.tailwindcss.com"></script>
+
 <!-- Modus Icons -->
 <link
   rel="preload"
@@ -24,9 +27,42 @@ A minimal one-time boiler-plate that every HTML page using Modus Web Components 
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@trimble-oss/modus-icons@latest/dist/modus-outlined/fonts/modus-icons.css"
 />
+
+<!-- Google Fonts: Open Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+  rel="stylesheet"
+/>
+
+<!-- Chart.js for data visualization -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 ```
 
----
+### 1.1 Modus Color Palette
+
+Using the correct colors is fundamental to branding. We define the Modus color palette as CSS custom properties (variables) in the :root pseudo-class for easy reuse.
+Place the following inside the <style> tags in your HTML head.
+
+:root {
+--modus-blue-primary: #0063a3;
+--modus-blue-accent: #00a9e0;
+--modus-gray-90: #1a1a1a;
+--modus-gray-70: #4d4d4d;
+--modus-gray-20: #e6e6e6;
+--modus-gray-10: #f5f5f5;
+--modus-white: #ffffff;
+--modus-green-success: #68a65c;
+--modus-red-alert: #d32f2f;
+--modus-yellow-warning: #f5a623;
+
+<!-- Chart.js CDN -->
+
+--modus-chart-text: #252A2E;
+--modus-chart-grid: #E0E1E9;
+
+}
 
 ## 2. JavaScript loader
 
@@ -131,6 +167,7 @@ Form Inputs Docs: https://trimble-oss.github.io/modus-wc-2.0/main/?path=/docs/do
 ## 8. Modus Web Componenents Index
 
 Below is a compact, LLM‑friendly index of every Modus Web Component. Each bullet lists the tag name, a short description, and a CDN URL.
+
 modus-wc-accordion — collapsible accordion sections — https://cdn.jsdelivr.net/gh/your-org/modus-docs/modus-wc-accordion.md
 modus-wc-alert — inline alert / notification banner — https://cdn.jsdelivr.net/gh/your-org/modus-docs/modus-wc-alert.md
 modus-wc-autocomplete — text input with suggestion dropdown — https://cdn.jsdelivr.net/gh/your-org/modus-docs/modus-wc-autocomplete.md
