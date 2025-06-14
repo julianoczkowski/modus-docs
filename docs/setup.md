@@ -42,27 +42,26 @@ A minimal one-time boiler-plate that every HTML page using Modus Web Components 
 
 ### 1.1 Modus Color Palette
 
-Using the correct colors is fundamental to branding. We define the Modus color palette as CSS custom properties (variables) in the :root pseudo-class for easy reuse.
-Place the following inside the <style> tags in your HTML head.
+Using the correct colors is fundamental to branding. The Modus color palette is defined as CSS custom properties (variables) in the `:root` pseudo-class for easy reuse.
 
+Place the following inside a `<style>` tag in your HTML `<head>`:
+
+```css
 :root {
---modus-blue-primary: #0063a3;
---modus-blue-accent: #00a9e0;
---modus-gray-90: #1a1a1a;
---modus-gray-70: #4d4d4d;
---modus-gray-20: #e6e6e6;
---modus-gray-10: #f5f5f5;
---modus-white: #ffffff;
---modus-green-success: #68a65c;
---modus-red-alert: #d32f2f;
---modus-yellow-warning: #f5a623;
-
-<!-- Chart.js CDN -->
-
---modus-chart-text: #252A2E;
---modus-chart-grid: #E0E1E9;
-
+  --modus-blue-primary: #0063a3;
+  --modus-blue-accent: #00a9e0;
+  --modus-gray-90: #1a1a1a;
+  --modus-gray-70: #4d4d4d;
+  --modus-gray-20: #e6e6e6;
+  --modus-gray-10: #f5f5f5;
+  --modus-white: #ffffff;
+  --modus-green-success: #68a65c;
+  --modus-red-alert: #d32f2f;
+  --modus-yellow-warning: #f5a623;
+  --modus-chart-text: #252a2e;
+  --modus-chart-grid: #e0e1e9;
 }
+```
 
 ## 2. JavaScript loader
 
@@ -102,7 +101,7 @@ Available values: `modus-modern-light` · `modus-modern-dark` · `modus-classic-
 </select>
 ```
 
-Persist the user’s choice by writing the value to `localStorage` and re-applying it on `DOMContentLoaded` if desired.
+Persist the user's choice by writing the value to `localStorage` and re-applying it on `DOMContentLoaded` if desired.
 
 ---
 
@@ -117,7 +116,7 @@ console.log(
 );
 ```
 
-If the log prints `true`, you’re ready to embed any `<modus-wc-*>` component.
+If the log prints `true`, you're ready to embed any `<modus-wc-*>` component.
 
 ---
 
